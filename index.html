@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>City Worth Calculator - Cities Skylines II</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="lander">
+      <img class="lander-image" src="Screenshot 2024-04-03 174054.png">
+      <div class="lander-text-container">
+        <h1>Calculate Your Cities Worth - Cities Skylines II</h1>
+        <p>Ever wondered how much your city would be worth? Take this quiz to find out!</p>
+        <p>If your interested in more, come over to my channel!</p>
+        <div class="self-promotion">
+          <a class="self-promotion-link" href="https://www.youtube.com/channel/UC9Ve5RA-InuLPhp7g7XATgA" target="_blank">
+            <img class="self-promoted-pfp" src="youtube-channel-remake.png">
+            <div>
+              <p class="self-promotion-name">Web-dev Gillett</p>
+              <p class="self-promotion-sub-count">1.12B Subscribers</p>
+            </div>
+          </a>
+          <a href="https://youtube.com/@webdevgillett3802?sub_confirmation=1" target="_blank">
+            <button class="self-promoted-sub">Subscribe</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="start-title">Before you start</p>
+    <p class="start-description">In this test you will be asked multiple questions regarding roads, zoning, special buildings and utilities. We recommend you open Cities Skylines II for gathering your cities data easily. The estimated test length will be 10 minutes. If you don't have an answer to a question, click skip. At the end of the test we will calculate the final worth of your city whether it's a small town, or an advanced megalopolis!</p>
+    <p class="start-title">&#8595; Answer these questions &#8595;</p>
+    <div class="two-one">
+      <div class="dark-purple-box">
+        <p class="box-title">Size of your city:</p>
+        <div class="box-container">
+          <div class="box-container-description">
+            <p>
+              Make a prediction of how many map tiles your city takes up.
+            </p>
+            <p>
+              <input type="number" class="box-input map-tile-amount">
+              map tiles
+            </p>
+          </div>
+          <img class="attached-picture" src="tile-demo.png">
+        </div>
+      </div>
+      <div class="low-density-box">
+        <p class="box-title">Low density residential size:</p>
+        <p class="box-description">By looking at your city, guess how much of it is low density residential.</p>
+        <p class="box-description">
+          <input type="number" class="box-input-black low-density-percent">
+          %
+        </p>
+      </div>
+    </div>
+    <div class="zoning-grid">
+      <div style="background-color: #96f20c" class="low-density-box">
+        <p class="box-title">Beach properties size:</p>
+        <p class="box-description">By looking at your city, guess how much of it is beach properties.</p>
+        <p class="box-description">
+          <input type="number" class="box-input-black beach-property-percent">
+          %
+        </p>
+      </div>
+      <div style="background-color: #0eba0b" class="low-density-box">
+        <p class="box-title">Row homes size:</p>
+        <p class="box-description">By looking at your city, guess how much of it is row homes.</p>
+        <p class="box-description">
+          <input type="number" class="box-input-black row-homes-percent">
+          %
+        </p>
+      </div>
+      <div style="background-color: #1ea303" class="low-density-box">
+        <p class="box-title">Medium density apartments size:</p>
+        <p class="box-description">By looking at your city, guess how much of it is medium density apartments.</p>
+        <p class="box-description">
+          <input class="box-input-black medium-density-apartments-percent" type="number">
+          %
+        </p>
+      </div>
+      <div style="background-color: #238006" class="low-density-box">
+        <p class="box-title">Low rent housing size:</p>
+        <p class="box-description">By looking at your city, guess how much of it is low rent housing.</p>
+        <p class="box-description">
+          <input type="number" class="box-input-black low-rent-housing-percent">
+          %
+        </p>
+      </div>
+      <div style="background-color: #185703; color: white;" class="low-density-box">
+        <p class="box-title">High density residential size:</p>
+        <p class="box-description">By looking at your city, guess how much of it is high density residential.</p>
+        <p class="box-description">
+          <input type="number" class="box-input high-density-residential-percent">
+          %
+        </p>
+      </div>
+      <div style="background-color: #0af2cf" class="low-density-box">
+        <p class="box-title">Mixed zoning size:</p>
+        <p class="box-description">By looking at your city, guess how much of it is mixed zoning.</p>
+        <p class="box-description">
+          <input type="number" class="box-input-black mixed-zoning-percent">
+          %
+        </p>
+      </div>
+      <div style="background-color: #0ad3f2" class="low-density-box">
+        <p class="box-title">Low density commercial size:</p>
+        <p class="box-description">By looking at your city, guess how much of it is low density commercial.</p>
+        <p class="box-description">
+          <input type="number" class="box-input-black low-density-commercial-percent">
+          %
+        </p>
+      </div>
+      <div style="background-color: #099cb3" class="low-density-box">
+        <p class="box-title">High density commercial size:</p>
+        <p class="box-description">By looking at your city, guess how much of it is high density commerial.</p>
+        <p class="box-description">
+          <input type="number" class="box-input-black high-density-commercial-percent">
+          %
+        </p>
+      </div>
+      <div style="background-color: #ebba1a" class="low-density-box">
+        <p class="box-title">Industrial size:</p>
+        <p class="box-description">By looking at your city, guess how much of it is industrial.</p>
+        <p class="box-description">
+          <input type="number" class="box-input-black industrial-percent">
+          %
+        </p>
+      </div>
+      <div style="background-color: #a81aeb" class="low-density-box">
+        <p class="box-title">Low density office size:</p>
+        <p class="box-description">By looking at your city, guess how much of it is low density offices.</p>
+        <p class="box-description">
+          <input type="number" class="box-input-black low-density-office-percent">
+          %
+        </p>
+      </div>
+      <div style="background-color: #70119c; color: white;" class="low-density-box">
+        <p class="box-title">High density office size:</p>
+        <p class="box-description">By looking at your city, guess how much of it is high density offices.</p>
+        <p class="box-description">
+          <input type="number" class="box-input high-density-office-percent">
+          %
+        </p>
+      </div>
+    </div>
+    <div class="calculate-container">
+      <button class="calculate-button" onclick="
+        finalCalculation();
+      ">Calculate</button>
+      <p class="final-amount">
+      </p>
+    </div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>
