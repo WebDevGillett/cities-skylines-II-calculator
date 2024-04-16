@@ -20,7 +20,9 @@
             </div>
           </a>
           <a href="https://youtube.com/@webdevgillett3802?sub_confirmation=1" target="_blank">
-            <button class="self-promoted-sub">Subscribe</button>
+            <button onclick="
+              subscribe();
+            " class="self-promoted-sub">Subscribe</button>
           </a>
         </div>
       </div>
@@ -141,6 +143,19 @@
           <input type="number" class="box-input high-density-office-percent">
           %
         </p>
+      </div>
+    </div>
+    <div class="special-buildings-container">
+      <div class="special-buildings-header">
+        <div>
+          <p class="box-title">Special Buildings</p>
+          <p class="box-description">Locate the special buildings in your city by opening the special buildings tab, and checking which ones are built.</p>
+        </div>
+        <input onkeyup="
+          filterItems();
+        " style="width: 100%;" class="box-input search-bar" type="text" placeholder="Search Buildings">
+      </div>
+      <div class="special-buildings-grid">
       </div>
     </div>
     <div class="calculate-container">
