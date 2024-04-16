@@ -67,7 +67,7 @@ body {
   margin-left: 30px;
 }
 .self-promoted-sub:hover {
-  background-color: rgb(212, 212, 212);
+  filter: brightness(75%);
 }
 .start-title {
   color: white;
@@ -203,4 +203,107 @@ body {
   font-weight: bold;
   font-size: 60px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.special-buildings-container {
+  background-color: #882ee8;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px 10vw 0px 10vw;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.special-buildings-grid {
+  background-color: rgba(0, 0, 0, 0.39);
+  padding: 20px;
+  border-radius: 10px;
+  column-gap: 20px;
+  row-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height:fit-content;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+@media (max-width: 1000px) {
+  .special-buildings-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1500px) {
+  .special-buildings-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.special-building {
+  background-color:#0cff08;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  color: black;
+}
+.special-building-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+  object-position: center;
+}
+.special-building-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0px;
+}
+.flag {
+  height: 35px;
+  border-radius: 7px;
+}
+.special-building-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 10px;
+}
+.add-item {
+  background-color: #17ff64;
+  border: none;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.336);
+  cursor: pointer;
+  margin: 0px 0px 0px 10px;
+}
+.remove-item {
+  background-color: #ff4d4d;
+  border: none;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.336);
+  cursor: pointer;
+  margin: 0px 0px 0px 10px;
+}
+.special-buildings-header {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.hide {
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 6px;
+}
+.subscribed {
+  color: white;
+  background-color: #272727;
 }
